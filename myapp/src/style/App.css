@@ -1,0 +1,365 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* ================= BODY ================= */
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background: #f4f7fb;
+  color: #222;
+  padding-top: 90px;
+}
+
+/* ================= NAVBAR ================= */
+.header {
+  width: 100%;
+  background: #1f2d3d;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 6%;
+  position: fixed;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 3px 12px rgba(0, 0, 0, 0.2);
+}
+
+.logo-section {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.navbar-photo {
+  width: 52px;
+  height: 52px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid #00bcd4;
+}
+
+.logo {
+  color: white;
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.navbar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px;
+}
+
+.navbar a {
+  color: white;
+  text-decoration: none;
+  font-size: 14px;
+  transition: 0.3s;
+}
+
+.navbar a:hover {
+  color: #00bcd4;
+}
+
+/* ================= HERO ================= */
+.hero {
+  min-height: 90vh;
+  background: linear-gradient(135deg, #1f2d3d, #2563eb, #00bcd4);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 20px;
+}
+
+.hero-content {
+  color: white;
+  text-align: center;
+  max-width: 850px;
+}
+
+.hero-content h1 {
+  font-size: 56px;
+  margin-bottom: 18px;
+}
+
+.hero-content p {
+  font-size: 19px;
+  line-height: 1.8;
+}
+
+/* ================= LAYOUT ================= */
+.container {
+  width: 90%;
+  max-width: 1150px;
+  margin: auto;
+  padding: 55px 0;
+}
+
+.course-page {
+  width: 90%;
+  max-width: 1000px;
+  margin: auto;
+  padding: 120px 0 55px;
+}
+
+/* ================= PROFILE ================= */
+.profile-img {
+  width: 175px;
+  height: 175px;
+  border-radius: 50%;
+  display: block;
+  margin: 0 auto 22px;
+  object-fit: cover;
+  border: 5px solid white;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.18);
+}
+
+.profile-img:hover {
+  transform: scale(1.05);
+  transition: 0.3s;
+}
+
+/* ================= TEXT ================= */
+h1 {
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+h2 {
+  color: #1f2d3d;
+  margin-bottom: 15px;
+}
+
+p {
+  line-height: 1.7;
+}
+
+.bio {
+  text-align: center;
+  color: #555;
+  line-height: 1.8;
+  max-width: 900px;
+  margin: 0 auto 28px;
+}
+
+/* ================= SECTIONS ================= */
+.section {
+  background: white;
+  padding: 26px;
+  border-radius: 16px;
+  margin-bottom: 24px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
+}
+
+.section ul {
+  padding-left: 22px;
+}
+
+.section li {
+  margin-bottom: 10px;
+}
+
+/* ================= SKILLS GRID ================= */
+.skills ul {
+  list-style: none;
+  padding-left: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+  gap: 15px;
+}
+
+.skills li {
+  background: linear-gradient(135deg, #2563eb, #00bcd4);
+  padding: 16px;
+  border-radius: 12px;
+  text-align: center;
+  transition: 0.3s;
+  margin-bottom: 0;
+}
+
+.skills li:hover {
+  transform: translateY(-5px);
+}
+
+.skills a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* ================= BUTTONS ================= */
+.btn {
+  display: inline-block;
+  padding: 12px 22px;
+  background: #00bcd4;
+  color: white;
+  border-radius: 8px;
+  text-decoration: none;
+  border: none;
+  cursor: pointer;
+  transition: 0.3s;
+  font-size: 15px;
+}
+
+.btn:hover {
+  background: #0097a7;
+  transform: translateY(-3px);
+}
+
+/* ================= CONTACT PAGE ================= */
+.contact-links {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+
+.contact-links .btn {
+  min-width: 230px;
+  text-align: center;
+  padding: 20px;
+  font-size: 16px;
+  line-height: 1.8;
+}
+
+.whatsapp {
+  background: #25d366;
+}
+
+.whatsapp:hover {
+  background: #1ea952;
+}
+
+.email {
+  background: #e74c3c;
+}
+
+.email:hover {
+  background: #c0392b;
+}
+
+.facebook {
+  background: #1877f2;
+}
+
+.facebook:hover {
+  background: #0f5dcf;
+}
+
+/* ================= MEETING FORM ================= */
+.meeting-form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.meeting-form label {
+  font-weight: bold;
+  color: #1f2d3d;
+}
+
+.meeting-form input,
+.meeting-form select,
+.meeting-form textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccd6dd;
+  border-radius: 8px;
+  font-size: 15px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.meeting-form textarea {
+  resize: vertical;
+}
+
+.checkbox-group {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  gap: 10px;
+  margin: 8px 0;
+}
+
+.checkbox-group label {
+  background: #f4f7fb;
+  padding: 10px;
+  border-radius: 8px;
+  font-weight: normal;
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+
+/* ================= FOOTER ================= */
+.footer {
+  background: #1f2d3d;
+  color: white;
+  text-align: center;
+  padding: 22px;
+  margin-top: 50px;
+}
+
+/* ================= MOBILE RESPONSIVE ================= */
+@media (max-width: 768px) {
+  body {
+    padding-top: 150px;
+  }
+
+  .header {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .logo-section {
+    margin-bottom: 8px;
+  }
+
+  .navbar {
+    justify-content: center;
+  }
+
+  .navbar-photo {
+    width: 45px;
+    height: 45px;
+  }
+
+  .logo {
+    font-size: 18px;
+  }
+
+  .navbar a {
+    font-size: 13px;
+  }
+
+  .hero-content h1 {
+    font-size: 36px;
+  }
+
+  .hero-content p {
+    font-size: 16px;
+  }
+
+  .container,
+  .course-page {
+    width: 94%;
+  }
+
+  .contact-links .btn {
+    width: 100%;
+  }
+}
+
+.submit-btn {
+  width: 100%;
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+.meeting-form h2 {
+  margin-top: 15px;
+  border-bottom: 2px solid #00bcd4;
+  padding-bottom: 8px;
+}
